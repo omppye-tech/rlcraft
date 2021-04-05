@@ -35,7 +35,8 @@ CMD [ \
   "-XX:InitiatingHeapOccupancyPercent=15", \
   "-XX:G1MixedGCLiveThresholdPercent=90", \
   "-XX:G1RSetUpdatingPauseTimePercent=5", \
-  "-XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem", \
+  "-XX:SurvivorRatio=32", \
+  "-XX:+PerfDisableSharedMem", \
   "-XX:MaxTenuringThreshold=1", \
   "-Dusing.aikars.flags=https://mcflags.emc.gs", \
   "-Daikars.new.flags=true", \
