@@ -6,8 +6,8 @@ RUN apk add --no-cache git unzip wget
 RUN wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
 RUN java -jar BuildTools.jar --compile craftbukkit --rev 1.12.2
 
-RUN wget https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2838/forge-1.12.2-14.23.5.2838-installer.jar
-RUN java -jar forge-1.12.2-14.23.5.2838-installer.jar --installServer
+RUN wget https://maven.minecraftforge.net/net/minecraftforge/forge/1.12.2-14.23.5.2855/forge-1.12.2-14.23.5.2855-installer.jar
+RUN java -jar forge-1.12.2-14.23.5.2855-installer.jar --installServer
 
 RUN wget https://media.forgecdn.net/files/2935/323/RLCraft+Server+Pack+1.12.2+-+Beta+v2.8.2.zip
 RUN unzip RLCraft+Server+Pack+1.12.2+-+Beta+v2.8.2.zip
@@ -41,6 +41,6 @@ CMD [ \
   "-Dusing.aikars.flags=https://mcflags.emc.gs", \
   "-Daikars.new.flags=true", \
   "-jar", \
-  "forge-1.12.2-14.23.5.2838-universal.jar", \
+  "forge-1.12.2-14.23.5.2855.jar", \
   "nogui" \
 ]
